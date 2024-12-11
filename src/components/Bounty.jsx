@@ -6,12 +6,12 @@ import {
   useWaitForTransactionReceipt,
   useWalletClient,
 } from "wagmi";
-import { usePermit } from "wagmi-permit";
+
 import { abi as stackpointContract } from "../abis/StackPointClaim.json";
 import contractConfig from "../configs/contracts.json";
 import { parseEther, zeroAddress } from "viem";
 import { Coins } from "lucide-react";
-
+import { usePermit } from "../utility/wagmiPermit";
 
 function Bounty() {
   const { bounty_code } = useLoaderData();

@@ -29,7 +29,7 @@ function AllRoutes() {
         })}
       />
        <Route
-        path="/bountyRewards"
+        path="/rewardHistory"
         element={<BountyRewards />}
         loader={(request) => loaderAuthGuard(request,async () => {
           
